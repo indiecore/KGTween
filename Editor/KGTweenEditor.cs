@@ -27,14 +27,16 @@ using UnityEditor;
 
 namespace KGTools.Animation
 {
-
 	[CustomEditor(typeof(KGTween), true)]
 	public class KGTweenEditor : Editor
 	{
 
 		#region Data
 
-		KGTween targetTween = null;
+		/// <summary>
+		/// The tween that the inspector is currently targeting.
+		/// </summary>
+		private KGTween targetTween = null;
 
 		#endregion
 
@@ -71,5 +73,4 @@ namespace KGTools.Animation
 		#endregion
 
 	}
-
 }
